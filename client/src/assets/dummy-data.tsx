@@ -1,111 +1,130 @@
-import { UploadIcon, VideoIcon, ZapIcon } from 'lucide-react';
+import { WandIcon, PlayIcon, TrendingUp } from "lucide-react";
 
 export const featuresData = [
-    {
-        icon: <UploadIcon className="w-6 h-6" />,
-        title: 'Discovery & Planning',
-        desc: 'We understand your goals, audience and challenges to craft a clear, actionable strategy.'
-    },
-    {
-        icon: <ZapIcon className="w-6 h-6" />,
-        title: 'Design & Development',
-        desc: 'High-quality design and scalable development focused on performance and usability.'
-    },
-    {
-        icon: <VideoIcon className="w-6 h-6" />,
-        title: 'Launch & Growth',
-        desc: 'We launch, optimize and continuously improve to drive measurable business growth.'
-    }
+  {
+    icon: <WandIcon className="w-6 h-6" />,
+    title: "AI Scripting",
+    desc: "Our Gemini-powered engine crafts high-converting scripts tailored to your specific niche and audience.",
+  },
+  {
+    icon: <PlayIcon className="w-6 h-6" />,
+    title: "Smart Generation",
+    desc: "Instantly transform text into cinematic 4K video ads with dynamic captions and transitions.",
+  },
+  {
+    icon: <TrendingUp className="w-6 h-6" />,
+    title: "Viral Optimization",
+    desc: "Automated editing for TikTok, Reels, and Shorts to maximize engagement and watch time.",
+  },
 ];
 
 export const plansData = [
-    {
-        id: 'starter',
-        name: 'Starter',
-        price: '$499',
-        desc: 'Best for early-stage startups.',
-        credits: 'One-time',
-        features: [
-            'Project discovery & planning',
-            'UI/UX design',
-            'Basic website development',
-            '1 revision round',
-            'Email support'
-        ]
-    },
-    {
-        id: 'pro',
-        name: 'Growth',
-        price: '$1,499',
-        desc: 'Growing teams and businesses.',
-        credits: 'Monthly',
-        features: [
-            'Everything in Starter',
-            'Advanced UI/UX design',
-            'Custom development',
-            'Performance optimization',
-            'Priority support'
-        ],
-        popular: true
-    },
-    {
-        id: 'ultra',
-        name: 'Scale',
-        price: '$3,999',
-        desc: 'For brands ready to scale fast.',
-        credits: 'Custom',
-        features: [
-            'Everything in Growth',
-            'Dedicated project manager',
-            'Ongoing optimization',
-            'Marketing & growth support',
-            'Chat + Email support'
-        ]
-    }
+  {
+    id: "starter",
+    name: "Starter",
+    price: "$29",
+    desc: "Best for Individual Creators",
+    credits: "monthly",
+    features: [
+      "10 AI Video Generations / month",
+      "720p Export Quality",
+      "Standard Gemini AI Scripting",
+      "AdGenie Watermark",
+      "Email support",
+    ],
+  },
+  {
+    id: "pro",
+    name: "Pro",
+    price: "$79",
+    desc: "Scaling Brands & Agencies",
+    credits: "monthly",
+    features: [
+      "Everything in Starter",
+      "Unlimited Video Generations",
+      "4K Ultra HD Exports",
+      'Advanced "Viral" Scripting Engine',
+      "No Watermark + Custom Branding",
+    ],
+    popular: true,
+  },
+  {
+    id: "ultra",
+    name: "Enterprise",
+    price: "Custom",
+    desc: "Large Teams & High Volume",
+    credits: "Custom",
+    features: [
+      "Everything in Growth",
+      "API Access for bulk automation",
+      "Dedicated GPU Rendering",
+      "Custom AI Model Fine-tuning",
+      "24/7 Priority Support",
+    ],
+  },
 ];
 
 export const faqData = [
-    {
-        question: 'What services does your agency provide?',
-        answer: 'We offer end-to-end digital services including brand strategy, UI/UX design, web and app development and growth-focused marketing solutions.'
-    },
-    {
-        question: 'Do you work with startups or only large companies?',
-        answer: 'We work with startups, growing businesses and established brands. Our process is flexible and tailored to match your goals and scale.'
-    },
-    {
-        question: 'How long does a typical project take?',
-        answer: 'Project timelines vary by scope, but most projects take between 2–6 weeks. We provide a clear timeline after the discovery phase.'
-    },
-    {
-        question: 'Do you offer ongoing support after launch?',
-        answer: 'Yes. We offer maintenance, optimization and growth support packages to ensure your product continues to perform and evolve.'
-    }
+  {
+    question: "Do I own the rights to the AI-generated ads?",
+    answer:
+      "Yes! Every video generated on a paid plan comes with a full commercial license. You own the content completely for use on any social or ad platform.",
+  },
+  {
+    question: "How long does it take to generate a video?",
+    answer:
+      "Under 5 seconds. Our Gemini-powered engine renders high-definition, 15-second ads almost instantly so you can test new hooks in real-time.",
+  },
+  {
+    question: "Can I upload my own product images?",
+    answer:
+      'Definitely. Upload your product photos and the AI will "animate" them into cinematic scenes while maintaining your brand’s specific colors and logos.',
+  },
+  {
+    question: "Are these videos optimized for the Instagram algorithm?",
+    answer:
+      'Yes. We use proven high-retention hooks and trending styles, ensuring all text stays in the "safe zones" so it\'s never covered by the Instagram UI.',
+  },
+  {
+    question: "Can I edit the script before it renders?",
+    answer:
+      "Total control. You can tweak the AI-generated script, change the emotional tone, or swap call-to-actions in our editor before hitting the final render.",
+  },
 ];
 
 export const footerLinks = [
-    {
-        title: "Company",
-        links: [
-            { name: "Home", url: "#" },
-            { name: "Services", url: "#" },
-            { name: "Work", url: "#" },
-            { name: "Contact", url: "#" }
-        ]
-    },
-    {
-        title: "Legal",
-        links: [
-            { name: "Privacy Policy", url: "#" },
-            { name: "Terms of Service", url: "#" }
-        ]
-    },
-    {
-        title: "Connect",
-        links: [
-            { name: "Twitter", url: "#" },
-            { name: "LinkedIn", url: "#" },
-            { name: "GitHub", url: "#" }
-        ]
-    }
+  {
+    title: "Product",
+    links: [
+      { name: "Features", url: "#" },
+      { name: "Pricing", url: "#" },
+      { name: "API Docs", url: "#" },
+      { name: "Template Library", url: "#" },
+    ],
+  },
+  {
+    title: "Resources",
+    links: [
+      { name: "AI Video Guide", url: "#" },
+      { name: "Blog", url: "#" },
+      { name: "Success Stories", url: "#" },
+      { name: "Help Center", url: "#" },
+    ],
+  },
+  {
+    title: "Legal",
+    links: [
+      { name: "Privacy Policy", url: "#" },
+      { name: "Terms of Service", url: "#" },
+      { name: "Cookie Policy", url: "#" },
+    ],
+  },
+  {
+    title: "Connect",
+    links: [
+      { name: "Twitter", url: "#" },
+      { name: "LinkedIn", url: "https://www.linkedin.com/in/usman-ansari-9a1bbb271/" },
+      { name: "GitHub", url: "https://github.com/ErUsAnsari" },
+    ],
+  },
 ];

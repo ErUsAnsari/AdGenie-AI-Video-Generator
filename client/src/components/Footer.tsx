@@ -1,10 +1,11 @@
+import { assets } from "../assets/assets";
 import { footerLinks } from "../assets/dummy-data";
 import { motion } from "framer-motion";
 
 export default function Footer() {
   return (
     <motion.footer
-      className="bg-white/6 border-t border-white/6 pt-10 text-gray-300"
+      className="bg-white/5 border-t border-white/6 pt-10 text-gray-300"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}
@@ -13,11 +14,10 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto px-6">
         <div className="flex flex-col md:flex-row items-start justify-between gap-10 py-10 border-b border-white/10">
           <div>
-            <img src="/logo.svg" alt="logo" className="h-8" />
+            <img src={assets.logo} alt="logo" className="h-8" />
             <p className="max-w-[410px] mt-6 text-sm leading-relaxed">
-              We are a digital agency focused on strategy, design and
-              development—helping brands build meaningful digital experiences
-              and grow sustainably.
+              High-performance video generation powered by Gemini AI. Create,
+              edit, and optimize viral social ads in seconds.
             </p>
           </div>
 
@@ -33,7 +33,9 @@ export default function Footer() {
                       <li key={i}>
                         <a
                           href={link.url}
-                          className="hover:text-white transition"
+                          className="hover:text-white hover:underline transition"
+                          rel="noopener noreferrer"
+                          target="_blank"
                         >
                           {link.name}
                         </a>
@@ -48,7 +50,12 @@ export default function Footer() {
 
         <p className="py-4 text-center text-sm text-gray-400">
           © {new Date().getFullYear()}{" "}
-          <a href="https://prebuiltui.com/tailwind-templates?ref=pixel-forge">
+          <a
+            href="https://github.com/ErUsAnsari"
+            rel="noopener noreferrer"
+            target="_blank"
+            className="hover:text-white hover:underline transition"
+          >
             Usman Ansari
           </a>
           . All rights reserved.
