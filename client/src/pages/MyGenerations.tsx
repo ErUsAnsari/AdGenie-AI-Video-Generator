@@ -29,10 +29,10 @@ const MyGenerations = () => {
       <div className="max-w-6xl mx-auto">
         <header className="mb-12">
           <h1 className="text-3xl md:text-4xl font-semibold mb-4">
-            My Generations
+            Project Dashboard
           </h1>
           <p className="text-gray-400">
-            View and manage your AI-generated content
+            Manage, edit, and export your AI-powered video ads.
           </p>
         </header>
 

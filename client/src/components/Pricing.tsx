@@ -17,11 +17,11 @@ export default function Pricing() {
         />
 
         <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto border-indigo-500 ">
-          {plansData.map((plan, i) => (
+          {plansData.map((plan, index) => (
             <motion.div
-              key={i}
+              key={index}
               ref={(el) => {
-                refs.current[i] = el;
+                refs.current[index] = el;
               }}
               initial={{ y: 150, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
@@ -31,10 +31,10 @@ export default function Pricing() {
                 stiffness: 250,
                 damping: 70,
                 mass: 1,
-                delay: 0.1 + i * 0.1,
+                delay: 0.1 + index * 0.1,
               }}
               onAnimationComplete={() => {
-                const card = refs.current[i];
+                const card = refs.current[index];
                 if (card) {
                   card.classList.add(
                     "transition",
@@ -80,7 +80,7 @@ export default function Pricing() {
 
               <div>
                 {plan.popular ? (
-                  <PrimaryButton className="w-full">Start Generating</PrimaryButton>
+                  <PrimaryButton className="w-full">Upgrade Now</PrimaryButton>
                 ) : (
                   <GhostButton className="w-full justify-center">
                     Start Generating
