@@ -107,7 +107,8 @@ const ProjectCard = ({
                       download
                       className="flex gap-2 items-center px-4 py-2 hover:bg-black/10 cursor-pointer"
                     >
-                      <ImageIcon size={14}>Download Image</ImageIcon>
+                      <ImageIcon size={14} />
+                      Download Image
                     </a>
                   )}
                   {gen.generatedVideo && (
@@ -116,10 +117,12 @@ const ProjectCard = ({
                       download
                       className="flex gap-2 items-center px-4 py-2 hover:bg-black/10 cursor-pointer"
                     >
-                      <PlaySquareIcon size={14}>Download Video</PlaySquareIcon>
+                      <PlaySquareIcon size={14} />
+                      Download Video
                     </a>
                   )}
-                  {(gen.generatedImage || gen.generatedVideo) && (
+
+                  {(gen.generatedVideo || gen.generatedImage) && (
                     <button
                       onClick={() =>
                         navigator.share({
@@ -130,7 +133,8 @@ const ProjectCard = ({
                       }
                       className="w-full flex gap-2 items-center px-4 py-2 hover:bg-black/10 cursor-pointer"
                     >
-                      <Share2Icon size={14}>Share</Share2Icon>
+                      <Share2Icon size={14} />
+                      Share
                     </button>
                   )}
 
@@ -138,7 +142,8 @@ const ProjectCard = ({
                     onClick={() => handleDelete(gen.id)}
                     className="w-full flex gap-2 items-center px-4 py-2 hover:bg-red-950/10 text-red-400 cursor-pointer"
                   >
-                    <Trash2Icon size={14}>Delete</Trash2Icon>
+                    <Trash2Icon size={14} />
+                    Delete
                   </button>
                 </ul>
               </div>
@@ -198,7 +203,10 @@ const ProjectCard = ({
           {/* user prompt */}
           {gen.userPrompt && (
             <div className="mt-3">
-              <div className="text-xs text-gray-300">{gen.userPrompt}</div>
+              <p>AI Prompt.</p>
+              <div className="text-xs text-gray-300 bg-white/3 p-2 rounded-md wrap-break-word">
+                {gen.userPrompt}
+              </div>
             </div>
           )}
 

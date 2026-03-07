@@ -41,8 +41,8 @@ const Generator = () => {
     <div className="min-h-screen text-white p-6 md:p-12 mt-28">
       <form onSubmit={handleGenerate} className="max-w-4xl mx-auto mb-40">
         <Title
-          heading="Create In-Context Image"
-          description="Upload your model and product images to generate stunning ads, short-form videos and social media posts"
+          heading="Create Viral Video Ad"
+          description="Upload your product assets to generate high-converting video ads, shorts, and social media posts in seconds."
         />
         <div className="flex gap-20 max-sm:flex-col items-start justify-between">
           {/* Left Column */}
