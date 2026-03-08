@@ -17,14 +17,14 @@ model User {
   updatedAt DateTime @updatedAt
 
   // Relations
-  projects     Project[]
+  projects Project[]
 }
 
 model Project {
   id                 String   @id @default(uuid())
   name               String
   userId             String
-  productName        String   
+  productName        String
   productDescription String   @default("")
   userPrompt         String   @default("")
   aspectRatio        String   @default("9:16")
@@ -42,5 +42,3 @@ model Project {
   // Relations
   user User @relation(fields: [userId], references: [id], onDelete: Cascade)
 }
-
-

@@ -123,7 +123,10 @@ export const footerLinks = [
     title: "Connect",
     links: [
       { name: "Twitter", url: "#" },
-      { name: "LinkedIn", url: "https://www.linkedin.com/in/usman-ansari-9a1bbb271/" },
+      {
+        name: "LinkedIn",
+        url: "https://www.linkedin.com/in/usman-ansari-9a1bbb271/",
+      },
       { name: "GitHub", url: "https://github.com/ErUsAnsari" },
     ],
   },
